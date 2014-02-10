@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Men's Lacrosse | Stanford University</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://www.stanford.edu/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/css/stanfordmodern.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/css/ceebox-min.css" media="all" />
+<script type="text/javascript" src="https://www.stanford.edu/stanfordmodern/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.stanford.edu/stanfordmodern/js/stanfordmodern.js"></script>
+<script type="text/javascript" src="https://www.stanford.edu/stanfordmodern/js/jquery.swfobject.js"></script>
+<script type="text/javascript" src="https://www.stanford.edu/stanfordmodern/js/jquery.ceebox-min.js"></script>
+<!-- Custom -->
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22416713-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<!-- Stanford Modern Templates Version 2.01 -->
+<!-- CSS Instructions: Select a combination of the following body classes e.g. <body class="two-sidebars drawer wide ie6-3col">
+
+[two-sidebars] or [sidebar-left] or [sidebar-right]
+    Create a two or three column layout
+    Affected div(s): #sidebar-left or #sidebar-right
+
+[nav] or [drawer]
+    Add horizontal navigation or horizontal navigation with expandable drawer (5 item max limit)
+    Affected div(s): #nav, #nav_drawer, #toggle
+
+[wide]
+    Flexible width layout
+
+[ie6-3col] or [ie6-2col]
+    Add wide display support for Internet Explorer 6 when used in conjunction with the [wide] body class.
+    Use ie6-3col for the two-sidebars layout.  Use ie6-2col for the sidebar-left or sidebar-right layouts.
+
+[topic] or [portal]
+    Enable styling for advanced templates such as portal or topic pages.
+-->
+<body class="topic">
+<!-- Start #layout -->
+<div id="layout">
+  <!-- Start #wrapper -->
+  <div id="wrapper">
+    <!-- Start #header -->
+    <div id="header">
+      <!-- Start #logo -->
+      <div id="logo"><!-- Place the code generated from the Stanford Banner Creator (http://www.stanford.edu/dept/its/cgi-bin/services/web/bannercreator/) here. After uploading the new banner, make sure that the src attribute of the img tag points to the correct location. -->
+        <img src="images/banner.gif" alt="Stanford University - Group or Department Name" border="0" usemap="#Map" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="-1,0,263,57" href="http://www.stanford.edu" alt="Stanford University" />
+          <area shape="rect" coords="275,4,700,57" href="http://www.stanford.edu" alt="Group or Department Name" />
+        </map>
+      </div>
+    </div>
+    <!-- End #header -->
+
+    <!-- Start #nav (Removable) -->
+    <div id="nav">
+      <%- partial('_menu') %>
+    </div>
+    <!-- End #nav (Removable) -->
+
+    <!-- Start #container -->
+    <div id="container">
+
+      <%- yield %>
+
+      <!-- Start #footer-wrapper -->
+      <div id="footer-wrapper">
+        <!-- Start #footer -->
+        <div id="footer">
+          <%- partial('_menu') %>
+        </div>
+        <!-- End #footer -->
+
+        <!-- Start #copyright -->
+        <div id="copyright" class="vcard"> &copy; <span class="fn org">Stanford University</span>. <span class="adr">450 Serra Mall, <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span>. <span class="tel">(650) 723-2300</span></span>. <a href="http://www.stanford.edu/site/terms.html">Terms of Use</a> | <a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></div>
+        <!-- End #copyright -->
+      </div>
+      <!-- End #footer-wrapper -->
+    </div>
+    <!-- End #container -->
+  </div>
+  <!-- End #wrapper -->
+</div>
+<!-- End #layout -->
+</body>
+</html>

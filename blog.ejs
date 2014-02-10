@@ -1,0 +1,52 @@
+<h1>Blog</h1>
+
+<!-- Start #sidebar-left (Removable) -->
+<div id="sidebar-left" class="sidebar">
+  <h2>Introduction</h2>
+  <p class="introduction">Vivamus augue. Quisque non tellus. Aenean ullamcorper semper ligula. Curabitur odio. Ut neque. Sed eget est. Nunc sit amet urna. Donec lectus nisi, tempus nec, consectetuer ac, interdum id, velit. Morbi interdum convallis magna.</p>
+</div>
+<!-- End #sidebar-left (Removable) -->
+
+<!-- Start #center -->
+<div id="center">
+
+
+  <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <script>
+  new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 4,
+    interval: 30000,
+    width: 760,
+    height: 500,
+    theme: {
+      shell: {
+        background: '#333333',
+        color: '#ffffff'
+      },
+      tweets: {
+        background: '#000000',
+        color: '#ffffff',
+        links: '#990000'
+      }
+    },
+    features: {
+      scrollbar: false,
+      loop: false,
+      live: false,
+      behavior: 'all'
+    }
+  }).render().setUser('stanfordlax').start();
+  </script>
+
+</div>
+<!-- End #center -->
+
+<%- partial('sidebar') %>
+
+<div class="content_clear"></div>
+</div>
+<!-- End #content -->
+
+

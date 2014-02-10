@@ -1,0 +1,18 @@
+<% var links = [
+    {name : "Home", link: ""},
+    {name : "Roster", link: "roster"},
+    {name : "Schedule", link: "schedule"},
+    {name : "Camp", link: "camp"},
+    {name : "Coaches", link: "coaches"},
+    {name : "Alumni", link: "alumni"},
+    {name : "Giving", link: "giving"},
+    {name : "Contact", link: "contact"}
+] %>
+
+<ul>
+<% for (var i = 0; i < links.length; i++) { %>
+  <li>
+    <a href="/<%= links[i].link %>"><%= links[i].name %></a>
+  </li>
+<% } %>
+</ul>
